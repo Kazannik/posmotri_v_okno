@@ -1,0 +1,33 @@
+{
+  "name": "posmotri_v_okno",
+  "version": "1.0.0",
+  "description": "https://github.com/Kazannik/posmotri_v_okno.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "Mikhail Kazannik",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.8",
+    "stylelint": "^14.16.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazannik/posmotri_v_okno.git"
+  },
+  "keywords": [
+    "видео"
+  ],
+  "bugs": {
+    "url": "https://github.com/Kazannik/posmotri_v_okno/issues"
+  },
+  "homepage": "https://github.com/Kazannik/posmotri_v_okno#readme"
+}
