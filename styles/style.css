@@ -64,7 +64,8 @@ ol {
   position: relative;
   display: flex;
   gap: 16px;
-  inline-size: 711px;
+  width: 711px;
+  height: 386px;
 }
 
 .result__video {
@@ -97,7 +98,7 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .search-form__label:hover {
@@ -107,7 +108,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  outline-offset: 1px;
+  outline-offset: 2px;
 }
 
 .search-form__textfield {
@@ -123,6 +124,14 @@ ol {
   background-color: transparent;
   appearance: none;
   inline-size: 225px;
+}
+
+.search-form__textfield:active {
+  border-color: transparent;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__checkbox-list {
@@ -147,16 +156,18 @@ ol {
 }
 
 .button {
+  width: 100%;
+  height: 34px;
+  margin-bottom: 2px;
   border: 1px solid #fff;
   padding: 6px 0;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-  inline-size: 100%;
 }
 
 .button:active {
@@ -181,7 +192,7 @@ ol {
 }
 
 .content__details {
-  inline-size: 100%;
+  inline-size: 534px;
 }
 
 .title {
@@ -205,10 +216,6 @@ ol {
   scrollbar-width: none;
 }
 
-.content__list::-webkit-scrollbar {
-  display: none;
-}
-
 .content__list-item {
   block-size: 107px;
 }
@@ -221,6 +228,23 @@ ol {
   display: block;
   margin: 2px;
   text-decoration: none;
+}
+
+.content__card-link:active, .content__card-link_current {
+  background: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline 1px #fff;
+  cursor: pointer;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .content__video-card {
@@ -247,12 +271,14 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  object-fit: cover;
-  object-position: center;
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
-  background-color: transparent;
+  margin-right: 1px;
+  margin-left: 2px;
+  width: 440px;
 }
