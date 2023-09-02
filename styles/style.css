@@ -57,13 +57,14 @@ ol {
 }
 
 .result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   align-self: flex-end;
 }
 
 .result__video-container {
-  position: relative;
-  display: flex;
-  gap: 16px;
+  position: relative;  
   width: 711px;
   height: 386px;
 }
@@ -192,11 +193,12 @@ ol {
 }
 
 .content__details {
-  inline-size: 534px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;  
 }
 
 .title {
-  padding: 0 0 26px;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -278,7 +280,8 @@ ol {
 }
 
 .more-button {
+  display:block;
+  width: calc(100% - 4px);
   margin-right: 1px;
   margin-left: 2px;
-  width: 440px;
 }
